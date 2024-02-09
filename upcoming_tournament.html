@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Gaming_community/</title>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1000, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          }); 
+        });
+        </script>
+    </head>
+<body id="body">
+    <section>
+        <div class="header">
+            <i class="fa fa-th-large" id="falarge" aria-hidden="true" onclick="Hamburger_menu_show()"></i>
+            <i class="fa fa-times" id="fatimes" aria-hidden="true" onclick="Hamburger_menu_close()"></i>
+            <div>
+                <a href="">privacy policy</a>
+            </div>
+        </div>
+        <div class="body">
+            <header>
+                <h1>Skillz Gaming Community</h1>
+                <div class="search">
+                    <input type="search" name="search" id="">
+                    <input type="submit" value="search">
+                </div>
+                <div class="user_detail">
+                    <h3>hello || skills</h3>
+                    <a href="login.html">logout</a>
+                </div>
+                <div class="header_left" id="menu_left">
+                    <div class="categories">
+                        <h1>game categories</h1>
+                        <ul>
+                            <li><a href="">free fire</a></li>
+                            <li><a href="">call of duty</a></li>
+                            <li><a href="">apex legends</a></li>
+                            <li><a href="">forza horizon</a></li>
+                            <li><a href="">gta 5</a></li>
+                            <li><a href="">cod mobile</a></li>
+                            <li><a href="">pub g</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_right" id="menu_right">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="">tournaments</a></li>
+                        <li><a href="">streaming</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="tournamentMore_first_page">
+                <div class="top_header">
+                    <h1>upcoming tournaments</h1>
+                    <ul>
+                        <li><a href="completed_tournament.html">completed</a></li>
+                        <li><a href="">tournament ranking</a></li>
+                        <li><a href="tournamentpage.html">organize tournament</a></li>
+                    </ul>
+                </div>
+                <div class="top_content">
+                    <h1>explore tournament</h1>
+                </div>
+            </div>
+            <div class="tournamentMore_second_page">
+                <div class="first">
+                    <div class="select">
+                        <input type="text" placeholder="game">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="text" placeholder="region">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="text" placeholder="bracket">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="text" placeholder="token">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="text" placeholder="new">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="text" placeholder="size">
+                        <div class="option">
+                            <ul>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                                <li>skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="date">
+                        <a href="">select date range</a>
+                    </div>
+                    <div class="clear">
+                        <a href="">clear</a>
+                    </div>
+                </div>
+                <div class="second">
+                    <a href="">fps</a>
+                    <a href="">rts</a>
+                    <a href="">racing</a>
+                    <a href="">fighting</a>
+                    <a href="">moba</a>
+                    <a href="">tcg</a>
+                    <a href="">battle royal</a>
+                    <a href="">sports</a>
+                    <a href="">mmo</a>
+                    <a href="">mobile</a>
+                    <a href="">auto chess</a>
+                    <a href="">pvp</a>
+                    <a href="">rpg</a>
+                </div>
+                <div class="third">
+                    <input type="radio" name="" id="">
+                    <label for="price">no price</label>
+                    <input type="radio" name="" id="">
+                    <label for="price">free entry</label>
+                    <input type="radio" name="" id="">
+                    <label for="price">instant payouts</label>
+                </div>
+            </div>
+            <div class="tournamentMore_third_page">
+                <div class="top">
+                    <div>
+                        <h1>tournament</h1>
+                    </div>
+                    <div>
+                        <h1>game</h1>
+                    </div>
+                    <div>
+                        <h1>bracket type</h1>
+                    </div>
+                    <div>
+                        <h1>date</h1>
+                    </div>
+                    <div>
+                        <h1>price</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="content">
+                        <div>
+                            <img src="/img/fortnight.jpg" alt="">
+                            <span>
+                                <h1><a href="tournament_readmore.html">battle of giostene game night</a></h1>
+                                <small>hosted by skills</small>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Battle For Giostone</p>
+                        </div>
+                        <div>
+                            <p>
+                                Single Elimination
+                                <br>
+                                0/64
+                            </p>
+                        </div>
+                        <div>
+                            <p>16 mar 2018</p>
+                        </div>
+                        <div>
+                            <p>10 usd</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <img src="/img/garena.jpg" alt="">
+                            <span>
+                                <h1><a href="">battle royal garena freefire</a> </h1>
+                                <small>hosted by skills</small>
+                            </span>
+                        </div>
+                        <div>
+                            <p>garena freefire</p>
+                        </div>
+                        <div>
+                            <p>
+                                Single Elimination
+                                <br>
+                                0/64
+                            </p>
+                        </div>
+                        <div>
+                            <p>16 mar 2018</p>
+                        </div>
+                        <div>
+                            <p>10 usd</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <img src="/img/freefire.jpg" alt="">
+                            <span>
+                                <h1><a href="">cultist vs lunatics</a></h1>
+                                <small>hosted by skills</small>
+                            </span>
+                        </div>
+                        <div>
+                            <p> garena freefire</p>
+                        </div>
+                        <div>
+                            <p>
+                                guild war
+                                <br>
+                                0/8
+                            </p>
+                        </div>
+                        <div>
+                            <p>16 mar 2018</p>
+                        </div>
+                        <div>
+                            <p>10 usd</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <img src="/img/freefire.jpg" alt="">
+                            <span>
+                                <h1><a href="">the 7th vs lunatics</a></h1>
+                                <small>hosted by skills</small>
+                            </span>
+                        </div>
+                        <div>
+                            <p>garena freefire</p>
+                        </div>
+                        <div>
+                            <p>
+                                guild war
+                                <br>
+                                0/8
+                            </p>
+                        </div>
+                        <div>
+                            <p>16 mar 2018</p>
+                        </div>
+                        <div>
+                            <p>10 usd</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div>
+                        1 2 3 4
+                    </div>
+                </div>
+            </div>
+            <div class="home_fourth_page">
+                <div class="content">
+                    <h1>Want to Create Your Own Tournament?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste omnis officia doloribus! Officia veniam nemo et consequatur quas! Id vel labore officia quisquam rerum exercitationem assumenda nulla aliquam molestiae?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam necessitatibus ratione ab aliquam aspernatur autem quidem itaque dolorum alias. Non laborum qui blanditiis saepe illum ipsum fugiat, labore architecto nulla.
+                    </p>
+                    <div class="button">
+                        <a href="">create an account</a>
+                        <a href="">apply to be an organizer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home_sixth_page">
+                <h1>recently asked questions</h1>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+            </div>
+            <div class="home_seventh_page">
+                <div class="content">
+                    <div class="left">
+                        <h1>need help with professional photography? let's work together!</h1>
+                        <div class="contact">
+                            <a href="{% url 'contact' %}">contact us</a>
+                        </div>
+                    </div>
+                    <div class="right comment_slideshow">
+                        <div class="comments">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quam reiciendis. Voluptatem deleniti eum a, eius minima laborum. Omnis dicta natus quibusdam provident voluptas praesentium a culpa minima commodi incidunt.</p>
+                            <div>
+                                <h2>
+                                    skills anthony
+                                    <br>
+                                    skillsnwokolo@gmail.com
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_eight_page">
+                <div class="signup_email">
+                    <div>
+                        <h1>Sign up to get latest update</h1>
+                        <p>
+                            Sign up for our monthly newsletter for the latest news & articles
+                        </p>
+                    </div>
+                    <div class="email">
+                        <form action="{% url 'base' %}" method="POST">
+                            <input type="email" name="" id="">
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_content">
+                    <div>
+                        <h3>gaming Community</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, distinctio voluptatum similique vitae quas soluta tenetur et dolore. Obcaecati velit necessitatibus totam accusantium atque nam consequatur eveniet eaque mollitia. Vel?
+                        </p>
+                    </div>
+                    <div class="padding">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="{% url 'about' %}">about us</a></li>
+                            <li><a href="{% url 'services' %}">our services</a></li>
+                            <li><a href="{% url 'booking' %}">booking</a></li>
+                            <li><a href="{% url 'contact' %}">contact us</a></li>
+                            <li><a href="{% url 'career' %}">career opportunities</a></li>
+                        </ul>
+                    </div>
+                    <div class="padding contact">
+                        <h3>contact</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+2347065934632">+2347065934632</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:july1ststudio@gmail.com">july1ststudio@gmail.com</a> 
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                July First Studios. 6, Market road, Rumoumasi Junction Port Harcourt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_ending">
+                    <p>Copyright © 2022 by july first studios. All rights reserved.</p>
+                    <a href="#top">
+                        <div class="back">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="tournament_page.js"></script>
+</body>
+</html>

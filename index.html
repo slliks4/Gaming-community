@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Gaming_community/</title>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1000, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          }); 
+        });
+        </script>
+    </head>
+<body id="body">
+    <section>
+        <div class="header">
+            <i class="fa fa-th-large" id="falarge" aria-hidden="true" onclick="Hamburger_menu_show()"></i>
+            <i class="fa fa-times" id="fatimes" aria-hidden="true" onclick="Hamburger_menu_close()"></i>
+            <div>
+                <a href="">privacy policy</a>
+            </div>
+        </div>
+        <div class="body">
+            <header>
+                <h1>Skillz Gaming Community</h1>
+                <div class="search">
+                    <input type="search" name="search" id="">
+                    <input type="submit" value="search">
+                </div>
+                <div class="user_detail">
+                    <h3>hello || skills</h3>
+                    <a href="login.html">logout</a>
+                </div>
+                <div class="header_left" id="menu_left">
+                    <div class="categories">
+                        <h1>game categories</h1>
+                        <ul>
+                            <li><a href="">free fire</a></li>
+                            <li><a href="">call of duty</a></li>
+                            <li><a href="">apex legends</a></li>
+                            <li><a href="">forza horizon</a></li>
+                            <li><a href="">gta 5</a></li>
+                            <li><a href="">cod mobile</a></li>
+                            <li><a href="">pub g</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_right" id="menu_right">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="tournamentpage.html">tournaments</a></li>
+                        <li><a href="">streaming</a></li>
+                        <li><a href="buying.html">buying and selling</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="home_first_page">
+                <div class="first_page_header"  id="top">
+                    <h1>home</h1>
+                </div>
+                <div class="first_page_body">
+                    <div class="text">
+                        <div class="text_content">
+                            <small>latest news</small>
+                            <h1>Hogwarts Legacy</h1>
+                            <p>PS5 vs Xbox Series X|S vs PC - Performance Review...</p>
+                            <div class="read_more">
+                                <a href="" id="show" onmousemove="Showmore4()" onmouseout="Show_more4()">See details</a>
+                                <i class="fa fa-long-arrow-right showmore4" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/img/valorant.jpg" alt="">
+                </div>
+                <div class="first_page_footer">
+                    <div class="first_page_footer_content">
+                        <div class="footer_flex lastest_news_flex">
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/Cyberpunk2077.jpg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/csgo.jpg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/spiderman.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/ForzaH5.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="footer_flex lastest_news_flex">
+                            <div>
+                                <h3>skills Legacy</h3>
+                                <img src="/img/fortnight.jpg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="/img/ff.jpeg" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/call of duty.webp" alt="" srcset="">
+                            </div>
+                            <div>
+                                <h3>Hogwarts Legacy</h3>
+                                <img src="img/apex.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <i class="fa fa-chevron-right" aria-hidden="true" onclick="Lastest_news(1)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="home_second_page">
+                <div class="left">
+                    <div class="top">
+                        <h1>recent gaming post</h1>
+                    </div>
+                    <div class="news">
+                        <div class="image">
+                            <img src="/img/call of duty.webp" alt="" srcset="">
+                        </div>
+                        <div class="text">
+                            <h1>Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</h1>
+                            <p><a href="">Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world!</a></p>
+                            <small>
+                                <div class="date">
+                                    14 hours, 26 minutes
+                                </div>
+                                <div class="comment">
+                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <a href="">comment</a>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image">
+                            <img src="/img/fortnight.jpg" alt="" srcset="">
+                        </div>
+                        <div class="text">
+                            <h1>Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</h1>
+                            <p><a href="">Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world!</a></p>
+                            <small>
+                                <div class="date">
+                                    14 hours, 26 minutes
+                                </div>
+                                <div class="comment">
+                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <a href="">comment</a>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="image">
+                            <img src="/img/apex.jpg" alt="" srcset="">
+                        </div>
+                        <div class="text">
+                            <h1>Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</h1>
+                            <p><a href="">Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world!</a></p>
+                            <small>
+                                <div class="date">
+                                    14 hours, 26 minutes
+                                </div>
+                                <div class="comment">
+                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <a href="">comment</a>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <a href="" id="show" onmousemove="Showmore3()" onmouseout="Show_more3()">load more</a>
+                        <i class="fa fa-long-arrow-right showmore3" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="first">
+                        <div class="top">
+                            <h1>admin news</h1>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/apex.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/fff.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/freefire.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <a href="" id="show" onmousemove="Showmore()" onmouseout="Show_more()">show more</a>
+                            <i class="fa fa-long-arrow-right show_more" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="top">
+                            <h1>trending posts</h1>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/apex.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/fff.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="image">
+                                <img src="/img/freefire.jpg" alt="" srcset="">
+                            </div>
+                            <div class="text">
+                                <h1><a href="">Hogwarts Legacy: PS5 vs Xbox Series X|S vs PC - Performance Review</a></h1>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <a href="" id="show" onmousemove="Showmore2()" onmouseout="Show_more2()">show more</a>
+                            <i class="fa fa-long-arrow-right showmore2" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="top">
+                            <h1>social plugins</h1>
+                        </div>
+                        <div class="social_plugins">
+                            <div><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></div>
+                            <div><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_third_page">
+                <div class="top">
+                    <h1>latest game reviews</h1>
+                </div>
+                <div class="flex">
+                    <div>
+                        <h3>Wo Long: Fallen Dynasty Review</h3>
+                        <img src="img/Cyberpunk2077.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3>Company of Heroes 3 Review - Multiplayer</h3>
+                        <img src="img/csgo.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3>Kirby's Return to Dream Land Deluxe Review</h3>
+                        <img src="img/spiderman.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3>Atomic Heart Review</h3>
+                        <img src="img/ForzaH5.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="">show more</a>
+                </div>
+            </div>
+            <div class="home_fourth_page">
+                <div class="content">
+                    <h1>Want to Create Your Own Tournament?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste omnis officia doloribus! Officia veniam nemo et consequatur quas! Id vel labore officia quisquam rerum exercitationem assumenda nulla aliquam molestiae?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam necessitatibus ratione ab aliquam aspernatur autem quidem itaque dolorum alias. Non laborum qui blanditiis saepe illum ipsum fugiat, labore architecto nulla.
+                    </p>
+                    <div class="button">
+                        <a href="">create an account</a>
+                        <a href="">apply to be an organizer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home_fifth_page">
+                <div class="top">
+                    <div>
+                        <h1>what is skills gaming Community</h1>
+                        <p>Community Gaming's platform creates a seamless experience for tournament organizers to host grassroots tournaments and for gamers to compete and instantly get paid when they win. The platform facilitates automatic payments that are fast, transparent, and require no blockchain knowledge to use!</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="content">
+                        <div class="image">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>connect</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem, fugit numquam nobis cupiditate ratione dolor magnam sequi quasi sed dolore doloribus facere! Optio error ipsa, dicta dolores laboriosam id.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="image">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>gamers</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem, fugit numquam nobis cupiditate ratione dolor magnam sequi quasi sed dolore doloribus facere! Optio error ipsa, dicta dolores laboriosam id.</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="image">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>globally</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem, fugit numquam nobis cupiditate ratione dolor magnam sequi quasi sed dolore doloribus facere! Optio error ipsa, dicta dolores laboriosam id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_sixth_page">
+                <h1>recently asked questions</h1>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+                <button class="accordion">How does Buff calculate my reward?</button>
+                <div class="panel">
+                    <p>
+                         Well, this is our secret sauce. We have our AI-based algorithm that collects data,
+                        calculates statistical probabilities, and generates the reward allocation accordingly. 
+                        Essentially, the logic here is to have the rewards based on in-game achievements.
+                        For example, the better your KDA ratio in League of Legends, 
+                        the more BUFF coins you will earn. On top of that, victories or defeats in team matches will influence your rewards.
+                    </p>
+                </div>
+            </div>
+            <div class="home_seventh_page">
+                <div class="content">
+                    <div class="left">
+                        <h1>need help with professional photography? let's work together!</h1>
+                        <div class="contact">
+                            <a href="{% url 'contact' %}">contact us</a>
+                        </div>
+                    </div>
+                    <div class="right comment_slideshow">
+                        <div class="comments">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quam reiciendis. Voluptatem deleniti eum a, eius minima laborum. Omnis dicta natus quibusdam provident voluptas praesentium a culpa minima commodi incidunt.</p>
+                            <div>
+                                <h2>
+                                    skills anthony
+                                    <br>
+                                    skillsnwokolo@gmail.com
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_eight_page">
+                <div class="signup_email">
+                    <div>
+                        <h1>Sign up to get latest update</h1>
+                        <p>
+                            Sign up for our monthly newsletter for the latest news & articles
+                        </p>
+                    </div>
+                    <div class="email">
+                        <form action="{% url 'base' %}" method="POST">
+                            <input type="email" name="" id="">
+                            <button type="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_content">
+                    <div>
+                        <h3>gaming Community</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, distinctio voluptatum similique vitae quas soluta tenetur et dolore. Obcaecati velit necessitatibus totam accusantium atque nam consequatur eveniet eaque mollitia. Vel?
+                        </p>
+                    </div>
+                    <div class="padding">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="{% url 'about' %}">about us</a></li>
+                            <li><a href="{% url 'services' %}">our services</a></li>
+                            <li><a href="{% url 'booking' %}">booking</a></li>
+                            <li><a href="{% url 'contact' %}">contact us</a></li>
+                            <li><a href="{% url 'career' %}">career opportunities</a></li>
+                        </ul>
+                    </div>
+                    <div class="padding contact">
+                        <h3>contact</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+2347065934632">+2347065934632</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:july1ststudio@gmail.com">july1ststudio@gmail.com</a> 
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                July First Studios. 6, Market road, Rumoumasi Junction Port Harcourt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_ending">
+                    <p>Copyright © 2022 by july first studios. All rights reserved.</p>
+                    <a href="#top">
+                        <div class="back">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
